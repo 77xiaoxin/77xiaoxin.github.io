@@ -62,16 +62,9 @@
 					<div class="classify">
 						<h4>文章分类</h4>
 						<ul class="list-unstyled">
-						{% for post in site.posts %}
-							<li><a href="#">{{ post.type }}</a></li>
-						{% endfor %}
-							<li><a href="#">Django</a></li>
-							<li><a href="#">Hive</a></li>
-							<li><a href="#">PostgreSQL</a></li>
-							<li><a href="#">Perl</a></li>
-							<li><a href="#">Java</a></li>
-							<li><a href="#">RabbitMQ</a></li>
-							<li><a href="#">NoSQL</a></li>
+							{% for post in site.posts %}
+								<li><a href="#">{{ post.type }}</a></li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
