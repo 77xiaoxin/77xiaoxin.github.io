@@ -60,9 +60,11 @@
 					</div>
 					<div class="classify">
 						<h4>文章分类</h4>
-						{% for category in site.categories %}
-							<p><a href="/categories/{{ category | first }}/">{{ category | first }}</a>&nbsp;&nbsp;&nbsp;&nbsp;{{ category | last | size }}</p>
-						{% endfor %}
+						<ul class="list-unstyled">
+							{% for category in site.categories %}
+								<li><a href="/categories/{{ category | first }}/">{{ category | first }}</a></li>
+							{% endfor %}
+						</ul>
 					</div>
 				</div>
 			</div>
