@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>{{ page.title }}</title>
-<link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.png">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/highlight.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<link rel="shortcut icon" href="{{ site.url }}/img/favicon.png">
+<link rel="stylesheet" href="{{ site.url }}/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ site.url }}/css/highlight.css">
+<link rel="stylesheet" href="{{ site.url }}/css/style.css">
+<script src="{{ site.url }}/js/jquery.min.js"></script>
+<script src="{{ site.url }}/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="navbar navbar-static-top">
@@ -62,8 +62,8 @@
 					<div class="classify">
 						<h4>文章分类</h4>
 						<ul class="list-unstyled">
-							{% for post in site.categories %}
-								<li><a href="#">{{ post.type }}</a></li>
+							{% for category in site.categories %}
+								<li><a href="#">{{ category }}</a></li>
 							{% endfor %}
 						</ul>
 					</div>
