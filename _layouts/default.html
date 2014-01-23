@@ -63,7 +63,7 @@
 						<h4>文章分类</h4>
 						<ul class="list-unstyled">
 							{% for category in site.categories %}
-								<li><a href="#">{{ category }}</a></li>
+								<li><a href="/categories/{{ category | first }}/">{{ category | first }} {{ category | last | size }}</a></li>
 							{% endfor %}
 						</ul>
 					</div>
