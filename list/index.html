@@ -3,7 +3,8 @@ layout: archive
 title: 小柴火的博客
 ---
 
+<ul>
 {% for post in site.posts %}
-	{{ post.content }}
-	<p>&nbsp;</p>
+	<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
