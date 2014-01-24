@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: Java为Process设置超时
-category： java
+category: java
 ---
 
 ##Java为Process设置超时
