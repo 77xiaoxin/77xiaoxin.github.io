@@ -3,7 +3,7 @@ layout: default
 title: 首页
 ---
 
-{% for post in site.posts %}
+{% for post in site.posts offset:2 limit:2 %}
 	{{ post.content }}
 	<p>&nbsp;</p>
 {% endfor %}
