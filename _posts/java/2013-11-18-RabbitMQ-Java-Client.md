@@ -1,7 +1,7 @@
 ---
 layout: archive
-titile: RabbitMQ-Java-client使用
-categoty: java
+title: RabbitMQ-Java-client使用
+category: java
 ---
 
 ##RabbitMQ-Java-client使用
