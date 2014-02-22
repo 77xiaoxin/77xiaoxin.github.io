@@ -8,7 +8,7 @@ category: hadoop
 
 做hadoop也有一年的时间了，但是基本上总是在照葫芦画瓢，用的都是搭建好的环境，真正底层上的东西并不是很清楚，这段时间比较闲，准备系统的学习一下hadoop。
 
-####准备
+###准备
 
 1. VirtualBox
 2. Ubuntu
@@ -19,7 +19,7 @@ category: hadoop
 VirtualBox可以去Oracle官方网站上下载，Ubuntu的官网最近似乎不太稳定，访问速度比较慢，不过Ubuntu镜像随处可见，我用的是32位的12.04LTS版本。Xshell和Xftp系列软件相信接触过hadoop的人都比较熟悉了，安装的时候选择home/school选项，不需要在费劲去找注册码了，我感觉注册和不注册，使用起来基本没什么区别。
 
 
-####安装虚拟机
+###安装虚拟机
 
 我总共建立了4台虚拟设备，由于我的笔记本配置有限，每台虚拟机分配1颗CPU和1G内存，不知道这种配置的集群以后运行起来会不会非常慢，不过还是以学习为主。
 
@@ -38,7 +38,7 @@ ubuntu安装完后，还不能通过Xshell进行连接，先从VirtualBox进入�
 3. 设备名：DataNode2  ip地址：192.168.1.110
 4. 设备名：DataNode3  ip地址：192.168.1.111
 
-####配置环境
+###配置环境
 
 部署hadoop需要的前提有两个，JDK和SSH免密码登陆。
 
@@ -58,8 +58,84 @@ SSH免密码登陆，在安装完SSH后通过`ls -a /home/king/`查看是否有.
 
 此外，还需要配置/etc/hosts文件，将各设备的ip和设备名添加进去。
 
-####部署hadoop
+###部署hadoop
 
 去apache官网下载hadoop，我下载的是hadoop-1.2.1版本。
 
+将下载的hadoop文件解压到/usr/local/目录下，并将文件夹名称改为hadoop。
 
+增加环境变量：
+
+	export HADOOP_INSTALL=/usr/local/hadoop
+	export PATH=$PATH:$HADOOP_INSTALL/bin
+
+然后使用`source /etc/profile`使其生效。
+
+配置conf/hadoop-env.sh
+
+	export JAVA_HOME=/usr/lib/jdk1.7.0_51
+
+配置conf/core-site.xml
+
+	<?xml version="1.0"?>
+	<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+	<!-- Put site-specific property overrides in this file. -->
+
+	<configuration>
+		<property>
+			<name>fs.default.name</name>
+			<value>hdfs://NameNode:9000</value>
+		</property>
+		<property>
+			<name>hadoop.tmp.dir</name>
+			<value>/tmp</value>
+		</property>
+	</configuration>
+
+配置conf/hdfs-site.xml
+
+	<?xml version="1.0"?>
+	<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+	
+	<!-- Put site-specific property overrides in this file. -->
+	
+	<configuration>
+		<property>
+			<name>dfs.replication</name>
+			<value>2</value>
+		</property>
+	</configuration>
+
+配置conf/mapred-site.xml
+
+	<?xml version="1.0"?>
+	<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+	
+	<!-- Put site-specific property overrides in this file. -->
+	
+	<configuration>
+		<property>
+			<name>mapred.job.tracker</name>
+			<value>NameNode:9001</value>
+		</property>
+	</configuration>
+
+配置conf/masters
+
+	NameNode
+
+配置conf/slaves
+
+	DataNode1
+	DataNode2
+	DataNode3
+
+至此，已经部署完毕。
+
+###启动
+
+	bin/hadoop namenode -format
+	bin/start-all.sh
+
+然后可以使用`hadoop dfsadmin -report`命令查看集群状态，也可以通过浏览器访问http://192.168.1.108:50070和http://192.168.1.108:50030查看。
