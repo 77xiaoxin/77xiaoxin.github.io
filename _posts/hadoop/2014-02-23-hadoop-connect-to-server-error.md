@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: ipc.Client: Retrying connect to server: NameNode/192.168.1.108:9000错误
+title: ipc.Client Retrying connect to server错误
 category: hadoop
 ---
 
