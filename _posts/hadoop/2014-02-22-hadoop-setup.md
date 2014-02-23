@@ -135,6 +135,8 @@ SSH免密码登陆，在安装完SSH后通过`ls -a /home/king/`查看是否有.
 
 ###启动
 
+ 在NameNode上，切换到hadoop目录下，执行如下命令：
+
 	bin/hadoop namenode -format
 	bin/start-all.sh
 
