@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>{{ page.title }}-小柴火的博客</title>
-<link rel="shortcut icon" href="{{ site.url }}/img/favicon.png">
-<link rel="stylesheet" href="{{ site.url }}/css/bootstrap.min.css">
-<link rel="stylesheet" href="{{ site.url }}/css/highlight.css">
-<link rel="stylesheet" href="{{ site.url }}/css/style.css">
-<script src="{{ site.url }}/js/jquery.min.js"></script>
-<script src="{{ site.url }}/js/bootstrap.min.js"></script>
-</head>
+{% include header.html %}
 <body>
 	<div class="navbar navbar-static-top">
 		<div class="navbar-inner">
@@ -27,47 +18,7 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="container">
-		<div class="header">
-			<h1 class="title">小柴火的博客</h1>
-			<p class="description">活在这草泥马的年代，就要时刻保持去他妹的心态</p>
-		</div>
-		<div class="container-fluid">
-			<div class="row-fluid">
-				<div class="span8">
-					<div class="post">
-						{{ content }}
-					</div>
-				</div>
-				<div class="span3 offset1">
-					<div class="about">
-						<h4>关于我</h4>
-						<p>
-							职业：<em>hadoop研发工程师</em><br />邮箱：<em>xiaoxin11347@gmail.com</em>
-						</p>
-					</div>
-					<div class="classify">
-						<h4>文章分类</h4>
-						<ul class="list-unstyled">
-							{% for category in site.categories %}
-								<li><a href="/categories/{{ category | first }}/">{{ category | first }}</a></li>
-							{% endfor %}
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<p>
-			关注新浪微博：<a target="_blank"
-				href="http://weibo.com/3697279945/profile?rightmod=1&wvr=5&mod=personinfo">采菇凉的小柴火</a>
-		</p>
-		<p>
-			<a href="#">回到顶部</a>
-		</p>
-	</div>
+	{% include container.html %}
+	{% include footer.html %}
 </body>
 </html>
