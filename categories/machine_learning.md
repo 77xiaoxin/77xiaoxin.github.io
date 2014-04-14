@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: »úÆ÷Ñ§Ï°Ëã·¨
+title: æœºå™¨å­¦ä¹ ç®—æ³•
 ---
 
 {% for post in site.categories.machine_learning %}

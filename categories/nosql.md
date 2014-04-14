@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: NoSQL¼¼Êõ
+title: NoSQLæŠ€æœ¯
 ---
 
 {% for post in site.categories.nosql %}

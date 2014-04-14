@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: HadoopÔÆ¼ÆËã
+title: Hadoopäº‘è®¡ç®—
 ---
 
 {% for post in site.categories.hadoop %}

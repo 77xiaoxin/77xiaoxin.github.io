@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: JavaÓïÑÔ
+title: Javaè¯­è¨€
 ---
 
 {% for post in site.categories.java %}

@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: 消息队列
+title: 娑堟伅闃熷垪
 ---
 
 {% for post in site.categories.mq %}
