@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 title: RabbitMQ-Java-client使用
 category: java
 ---

@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 title: Java为Process设置超时
 category: java
 ---

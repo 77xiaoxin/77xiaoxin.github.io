@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 title: PostgreSQL配置远程连接
 category: nosql
 ---

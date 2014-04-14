@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 title: hadoop学习笔记——pig
 category: hadoop
 ---

@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 title: Java冒泡排序
 category: Java
 ---

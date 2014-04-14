@@ -1,9 +1,9 @@
 ---
-layout: archive
-title: 文章列表
+layout: posts
+title: hadoop
 ---
 
-{% for post in site.posts %}
+{% for post in site.categories.hadoop %}
 	<p>
 		{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
 	<p>

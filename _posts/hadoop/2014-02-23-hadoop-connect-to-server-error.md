@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 title: ipc.Client Retrying connect to server错误
 category: hadoop
 ---

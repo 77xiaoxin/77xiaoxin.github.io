@@ -1,9 +1,9 @@
 ---
-layout: archive
-title: hadoop
+layout: posts
+title: nosql
 ---
 
-{% for post in site.categories.hadoop %}
+{% for post in site.categories.nosql %}
 	<p>
 		{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
 	<p>
