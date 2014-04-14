@@ -3,7 +3,7 @@ layout: posts
 title: hadoop学习笔记——pig
 category: hadoop
 ---
-
+   
 ##hadoop学习笔记——pig
 
 ###环境搭建
