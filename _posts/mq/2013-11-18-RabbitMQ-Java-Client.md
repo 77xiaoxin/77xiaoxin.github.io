@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: RabbitMQ-Java-client使用
-category: java
+category: mq
 ---
 
 ##RabbitMQ-Java-client使用

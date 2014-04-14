@@ -1,0 +1,8 @@
+---
+layout: posts
+title: NoSQLºº ı
+---
+
+{% for post in site.categories.nosql %}
+<p>{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a><p>
+{% endfor %}
