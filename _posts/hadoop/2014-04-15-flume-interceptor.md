@@ -4,7 +4,7 @@ title: Flume NG自定义拦截器
 category: hadoop
 ---
 
-##flume-NG自定义拦截器
+##Flume-NG自定义拦截器
 
 Flume NG是一个分布式、可靠的日志收集、聚合系统，最早由cloudera开发，作为之前Flume OG的一个分支，更加简单，体积更加小，更容易部署。
 
@@ -206,3 +206,5 @@ ok，现在把工程打包为jar文件，放到flume部署目录下的lib目录�
 注意自定义拦截器的全称要书写正确。
 
 启动flume-ng，搞定！
+
+参考文档：http://flume.apache.org/documentation.html
