@@ -1,10 +1,10 @@
 ---
 layout: posts
-title: RabbitMQ-Java-client使用
+title: RabbitMQ简单应用（Java）
 category: mq
 ---
 
-##RabbitMQ-Java-client使用
+##RabbitMQ简单应用（Java）
 
 rabbitmq是一个消息队列，这几天工作需要，应用它做了一个分布式的爬虫。
 
