@@ -72,3 +72,9 @@ li {
 	background-color: #f9f9f9;
 	border-top: 1px solid #e5e5e5;
 }
+
+.advertisement {
+	padding: 15px 0;
+	margin: 0;
+	border: solid 1px #e5e5e5;
+}
