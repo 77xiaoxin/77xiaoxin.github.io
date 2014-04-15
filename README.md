@@ -1,4 +1,5 @@
-77xiaoxin.github.io
+King's Blog
 ===================
-正在学习使用github建立博客，网站正在建设中，欢迎指导！
-如有问题，可发送邮件至4051572@qq.com
+网站地址：http://sep10.com
+
+比较简陋，欢迎各位光临指导，联系作者，请邮件至xiaoxin11347@gmail.com。
