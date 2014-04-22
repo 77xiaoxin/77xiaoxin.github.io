@@ -4,6 +4,7 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: #555;
 	line-height: 1.8;
+	border: 1px solid gray;
 }
 
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
@@ -20,12 +21,12 @@ li {
 .header {
 	padding-top: 40px;
 	padding-bottom: 20px;
+	border: 1px solid gray;
 }
 
 .advertisement {
 	border: 1px solid gray;
-	height: 92px;
-	width: 720px;
+	padding-bottom: 15px;
 }
 
 .title {
