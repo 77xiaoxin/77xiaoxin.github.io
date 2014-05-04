@@ -1,3 +1,40 @@
-safe: true
+permalink: /posts/:year/:month/:day/:title
+
+encoding: UTF-8
+
 markdown: rdiscount
-url: http://sep10.com
+
+safe: true
+
+title : Sep 10th
+author :
+  name : Sep 10th
+  email : xiaoxin11347@gmail.com
+
+production_url : http://sep10.com
+
+JB :
+  version : 0.3.0
+
+  BASE_PATH : false
+
+  ASSET_PATH : false
+
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
+
+  comments :
+    provider : disqus
+    disqus :
+      short_name : sep10th
+
+  analytics :
+    provider : google
+    google :
+        tracking_id : 'UA-50024620-1'
+
+  sharing :
+    provider : false
