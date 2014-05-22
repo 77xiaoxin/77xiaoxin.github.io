@@ -99,12 +99,12 @@ filter：经常用于对数据进行筛选，语法如下：
 
 网络上有大神整理了一些文章，写的非常详细，收藏起来，以供参阅。
 
-[Apache Pig的一些基础概念及用法总结（1）](http://www.codelast.com/?p=3621)
+<a target="_blank" href="http://www.codelast.com/?p=3621">Apache Pig的一些基础概念及用法总结（1）</a>
 
-[Apache Pig的一些基础概念及用法总结（2）](http://www.codelast.com/?p=4611)
+<a target="_blank" href="http://www.codelast.com/?p=4611">Apache Pig的一些基础概念及用法总结（2）</a>
 
-[Apache Pig中文教程（进阶）](http://www.codelast.com/?p=4249)
+<a target="_blank" href="http://www.codelast.com/?p=4249">Apache Pig中文教程（进阶）</a>
 
-[使用Apache Pig时应该注意/避免的操作或事项](http://www.codelast.com/?p=4577)
+<a target="_blank" href="http://www.codelast.com/?p=4577">使用Apache Pig时应该注意/避免的操作或事项</a>
 
 
