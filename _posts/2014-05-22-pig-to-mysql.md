@@ -16,7 +16,7 @@ tags: [pig, hadoop]
 
 	sqoop export --connect jdbc:mysql://localhost:3306/test --table wordcount --export-dir /test/wordcount.out --fields-terminated-by '\t' --username root
 
-可是偏偏有一些任务，计算结果只有1行，或者几行，至多几十行，用上面的方法总觉得有些不值当的，就想让Pig计算的结果直接存到MySQL中。pig给提供了DBStorage类，正好可以满足要求。
+可是偏偏有一些任务，计算结果只有1行，或者几行，至多几十行，用上面的方法总觉得有些不值当的，就想让Pig计算的结果直接存到MySQL中。在piggybank包中有一个DBStorage类，正好可以满足要求。
 
 首先，要在MySQL中创建一张表：
 
