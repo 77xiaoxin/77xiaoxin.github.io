@@ -1,12 +1,17 @@
 ---
 layout: post
 category: linux
-title: ssh Connection by remote host解决办法
+title: ssh无法连接解决办法
 tags: [linux]
 ---
 {% include JB/setup %}
 
-如题，故障表述很清楚：链接被远程主机关闭。
+故障现象：
+
+	[root@bigdata104 ~]# ssh bigdata101
+	ssh_exchange_identification: Connection closed by remote host
+
+故障表述很清楚：链接被远程主机关闭。
 
 在linux中有三个和host相关的文件：`/etc/hosts`、`/etc/hosts.allow`和`/etc/hosts.deny`
 
