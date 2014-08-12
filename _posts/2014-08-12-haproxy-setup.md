@@ -6,7 +6,7 @@ tags: [hadoop, haproxy]
 ---
 {% include JB/setup %}
 
-##安装
+###安装
 
 方法一：
 
@@ -20,7 +20,7 @@ tags: [hadoop, haproxy]
 
 	yum install haproxy
 
-##配置
+###配置
 
 我采用方法二安装，配置文件位置：`/etc/haproxy/haproxy.cfg`，另外，可以通过service方式启动服务。
 
