@@ -1,7 +1,7 @@
 ---
 layout: post
 category: linux
-title: ssh_exchange_identification: Connection closed by remote host解决办法
+title: ssh Connection by remote host解决办法
 tags: [linux]
 ---
 {% include JB/setup %}
