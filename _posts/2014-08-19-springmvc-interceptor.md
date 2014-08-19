@@ -1,6 +1,6 @@
 ---
 layout: post
-category: JAVAEE
+category: j2ee
 title: SpringMVC拦截器使用
 tags: [SpringMVC, 拦截器]
 ---

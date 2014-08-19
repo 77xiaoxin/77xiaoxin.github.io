@@ -1,6 +1,6 @@
 ---
 layout: post
-category: java
+category: java语言
 title: CommunicationsException异常处理
 tags: [java, mysql]
 ---
