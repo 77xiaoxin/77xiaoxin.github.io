@@ -30,13 +30,13 @@ tags: [java, mysql]
 		<beans:property name="url" value="jdbc:mysql://10.0.69.74:3306/ftpd" />
 		<beans:property name="username" value="root" />
 		<beans:property name="password" value="bigdata" />
-		<beans:property name="initialSize" value="5" /><!-- 初始化连接数量 -->
-		<beans:property name="maxActive" value="30" /><!--最大连接数量 -->
-		<beans:property name="maxIdle" value="10" /><!--最大空闲连接 -->
-		<beans:property name="minIdle" value="5" /><!--最小空闲连接 -->
-		<beans:property name="removeAbandoned" value="true" /><!--是否自动回收超时连接 -->
-		<beans:property name="removeAbandonedTimeout" value="60" /><!--超时时间(以秒数为单位) -->
-		<beans:property name="maxWait" value="6000" /><!-- 超时等待时间以毫秒为单位 -->
+		<beans:property name="initialSize" value="5" />
+		<beans:property name="maxActive" value="30" />
+		<beans:property name="maxIdle" value="10" />
+		<beans:property name="minIdle" value="5" />
+		<beans:property name="maxWait" value="6000" />
+		<beans:property name="timeBetweenEvictionRunsMillis" value="3600000" />
+		<beans:property name="minEvictableIdleTimeMillis" value="120000" />
 	</beans:bean>
 
 观察了好久，再没出过这问题了。
