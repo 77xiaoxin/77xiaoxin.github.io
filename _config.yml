@@ -29,7 +29,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : Bug.im
+      short_name : bugim
 
   analytics :
     provider : google
