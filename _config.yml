@@ -29,7 +29,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : sep10th
+      short_name : Bug.im
 
   analytics :
     provider : google
