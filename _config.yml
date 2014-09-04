@@ -6,12 +6,12 @@ markdown: rdiscount
 
 safe: true
 
-title : Sep 10th
+title : Bug.im
 author :
-  name : Sep 10th
+  name : Bug.im
   email : xiaoxin11347@gmail.com
 
-production_url : http://sep10.com
+production_url : http://bug.im
 
 JB :
   version : 0.3.0
